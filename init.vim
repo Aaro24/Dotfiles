@@ -9,6 +9,7 @@
 
 call plug#begin()
 
+Plug 'https://github.com/fidian/hexmode'
 Plug 'https://github.com/jiangmiao/auto-pairs'
 Plug 'https://github.com/sheerun/vim-polyglot'
 Plug 'https://github.com/xavierd/clang_complete'
@@ -58,5 +59,7 @@ let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
 let asmsyntax = "nasm"
+
+let g:hexmode_patterns = '*.bin,*.exe,*.dat,*.o'
 
 inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
