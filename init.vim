@@ -9,6 +9,7 @@
 
 call plug#begin()
 
+Plug 'https://github.com/drewtempelmeyer/palenight.vim'
 Plug 'https://github.com/fidian/hexmode'
 Plug 'https://github.com/jiangmiao/auto-pairs'
 Plug 'https://github.com/sheerun/vim-polyglot'
@@ -39,7 +40,7 @@ nmap <F8> :TagbarToggle<CR>
 
 :set completeopt-=preview
 
-colorscheme minimalist
+colorscheme palenight
 set background=dark
 
 let g:NERDTreeDirArrowExpandable="+"
